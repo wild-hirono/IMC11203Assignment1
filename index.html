@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OSEMN Methodology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PARTICLE BACKGROUND -->
+<div id="particles-js"></div>
+
+<!-- NAVIGATION -->
+<header>
+    <nav>
+        <h2 class="logo">OSEMN</h2>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('methodology')">Methodology Overview</a></li>
+            <li><a href="#" onclick="showSection('example')">Real-World Example</a></li>
+            <li><a href="#" onclick="showSection('reference')">Reference</a></li>
+            <li><a href="#" onclick="showSection('about')">About Me</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="section active fade">
+    <img src="images/graph.png" class="hero-img" alt="Data Science Image">
+    <h1>OSEMN Framework</h1>
+    <p>
+        The OSEMN Framework stands for Obtain, Scrub, Explore, Model, and Interpret.
+        It is a data science method used to turn raw data into useful information.
+        It gives clear steps to follow when working with data, from collecting it
+        to understanding the results.
+    </p>
+    <p>
+        The OSEMN framework was introduced by Hillary Mason, a data scientist and
+        co-founder of Fast Forward Labs. It was created based on real-world data
+        science work, not just theory. OSEMN is popular because it is easy to
+        understand and helps people make better decisions using data.
+    </p>
+</section>
+
+<!-- METHODOLOGY OVERVIEW -->
+<section id="methodology" class="section fade">
+    <h2>Methodology Overview</h2>
+
+    <h3>Key Phases</h3>
+    <div class="cards">
+        <div class="card"><strong>Obtain</strong><p>Collect data from sources like databases, websites, or surveys. Purpose: Get the raw information needed for analysis.</p></div>
+        <div class="card"><strong>Scrub</strong><p>Clean and organize the data by fixing errors, missing values, or duplicates. Purpose: Ensure data is accurate and ready to use.</p></div>
+        <div class="card"><strong>Explore</strong><p>Analyze and visualize the data to find patterns, trends, or relationships. Purpose: Understand the data before building models.</p></div>
+        <div class="card"><strong>Model</strong><p>Use statistical or machine learning techniques to make predictions or find insights. Purpose: Solve problems or answer questions using data.</p></div>
+        <div class="card"><strong>Interpret</strong><p>Explain the results in simple terms and make recommendations. Purpose: Turn data into actionable decisions that others can understand.</p></div>
+    </div>
+
+    <h3>Purpose</h3>
+    <ul>
+        <li>Turns raw data into useful insights</li>
+        <li>Cleans and organizes data to make it accurate</li>
+        <li>Finds patterns, trends, and relationships</li>
+        <li>Helps make decisions based on evidence</li>
+    </ul>
+
+    <h3>Applications</h3>
+    <ul>
+        <li>Business: Predict customer behavior or improve sales</li>
+        <li>Healthcare: Analyze patient data, predict disease risks</li>
+        <li>Finance: Detect fraud, predict stock trends</li>
+        <li>Technology/Websites: Understand user behavior, improve apps</li>
+        <li>Government/Public Services: Analyze traffic or population data</li>
+    </ul>
+</section>
+
+<!-- REAL WORLD EXAMPLE -->
+<section id="example" class="section fade">
+    <h2>Real-World Example</h2>
+
+    <h3>Problem Statement</h3>
+    <p>
+        "CoreFlow Pilates Studio has seen a decline in class bookings among its
+        'Reformer Basic' members. The studio wants to use the OSEMN framework to
+        predict which clients are likely to stop their memberships so they can
+        offer a complimentary private session or a membership discount to keep
+        them engaged."
+    </p>
+
+    <h3>OSEMN Phases (Case Study)</h3>
+    <div class="cards">
+        <div class="card"><strong>Obtain (O)</strong>
+            <p>Description: The Pilates studio collects data from its front-desk booking system whenever members check in.</p>
+            <p>Data Collected:</p>
+            <ul>
+                <li>Member ID</li>
+                <li>Age</li>
+                <li>Number of classes attended per month</li>
+                <li>Monthly membership fee</li>
+            </ul>
+            <p>Output: Raw dataset containing member attendance and payment information.</p>
+        </div>
+
+        <div class="card"><strong>Scrub (S)</strong>
+            <p>Description: Cleaning the collected data to ensure accuracy and usability.</p>
+            <ul>
+                <li>Remove canceled memberships</li>
+                <li>Fix missing or incorrect contact information</li>
+                <li>Remove duplicate records</li>
+            </ul>
+            <p>Output: Clean and reliable dataset ready for analysis.</p>
+        </div>
+
+        <div class="card"><strong>Explore (E)</strong>
+            <p>Description: Analyze cleaned data to identify patterns and trends.</p>
+            <ul>
+                <li>Members attending fewer than 4 classes per month are more likely to cancel</li>
+                <li>80% of low-attendance members stop attending the following month</li>
+            </ul>
+            <p>Output: Insights on attendance and member retention patterns.</p>
+                <img src="images/chart.png" class="content-img" alt="Pilates Studio Data">
+        </div>
+
+        <div class="card"><strong>Model & Interpret (M + N)</strong>
+            <p>Description: Create a decision model to identify at-risk members and take action to retain them.</p>
+            <ul>
+                <li>If member is under 30 years old AND has not attended any class in the last 10 days → High Risk of leaving</li>
+                <li>Send personalized “We Miss You” WhatsApp messages</li>
+                <li>Offer a 10% discount or a free private session</li>
+            </ul>
+            <p>Output: Improved member retention, higher engagement, and increased class bookings.</p>
+                <img src="images/casestudy.png" class="content-img" alt="Pilates Studio Data">
+        </div>
+    </div>
+
+    <h3>Advantages & Limitations</h3>
+    <table>
+        <tr>
+            <th>Advantages</th>
+            <th>Limitations</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Structured workflow: Easy to follow from raw data to actionable insights.</li>
+                    <li>Flexible: Can handle many types of data and industries.</li>
+                    <li>Helps decision-making: Provides clear, evidence-based recommendations.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Data quality dependent: Poor or incomplete data reduces accuracy.</li>
+                    <li>Time-consuming: Cleaning and modeling may require significant effort.</li>
+                    <li>Requires expertise: Statistical or machine learning knowledge is needed for the modeling stage.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <h3>Industry Adoption</h3>
+    <ul>
+        <li>Fitness & Wellness: Studios like CoreFlow Pilates, gyms, yoga centers (predict customer churn, improve retention).</li>
+        <li>Retail & E-commerce: Amazon, Zara (analyze shopping patterns, predict customer behavior).</li>
+        <li>Healthcare: Hospitals (predict patient no-shows, disease risk).</li>
+        <li>Finance & Banking: Banks (fraud detection, customer retention).</li>
+        <li>Technology & Web Analytics: Netflix, Spotify (predict user churn, recommend content).</li>
+    </ul>
+</section>
+
+<!-- REFERENCE -->
+<section id="reference" class="section fade">
+    <h2>Reference</h2>
+    <p>Mason, H., & Wiggins, C. (n.d.). The OSEMN data science framework. ML4Devs.</p>
+    <p>DASCA. (n.d.). A step-by-step guide to the data science workflow.</p>
+    <p>IBM. (n.d.). What is data science?</p>
+    <p>Rollins, J. (n.d.). Data Science Methodology.</p>
+    <p>IBM Data Science Methodology. (n.d.).</p>
+</section>
+
+<!-- ABOUT ME -->
+<section id="about" class="section fade">
+    <h2>About Me</h2>
+    <p>
+        My name is Nurul Nafisah Binti Mohd Nizam. I am a student studying Data
+        Science (AI). I prepared this report to learn about the OSEMN and Data
+        Science methodologies and how they are used in real-world data projects.
+    </p>
+</section>
+
+<!-- JS -->
+<script src="script.js"></script>
+<!-- Particles.js -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS('particles-js', {
+  "particles": {
+    "number": {"value": 60},
+    "color": {"value": "#1A001A"},
+    "shape": {"type": "circle"},
+    "opacity": {"value": 0.2},
+    "size": {"value": 3},
+    "line_linked": {"enable": true,"distance": 150,"color": "#702963","opacity":0.2,"width":1},
+    "move": {"enable": true,"speed": 2}
+  }
+});
+</script>
+</body>
+</html>
